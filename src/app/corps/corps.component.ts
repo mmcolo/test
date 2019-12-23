@@ -30,9 +30,9 @@ export class CorpsComponent implements OnInit {
 
   formations = [
   {
-    titre: 'Brevet de technicien supérieurs',
+    titre: 'BTS-SIO',
     option: 'Option B (SLAM)',
-    lieu: 'Lycée Marie Curie de Tarbes',
+    lieu: 'Lycée Marie Curie, Tarbes 65000',
     date: 'septembre 2016 / juillet 2018'
   },
   {
