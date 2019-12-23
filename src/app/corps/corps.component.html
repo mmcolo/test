@@ -1,0 +1,38 @@
+<div class="bg-light mb-3">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 text-center">
+            <img style="width: 230px; height: 230px;" src="assets/miftahou.jpg" alt="Miftahou MCOLO" class="rounded-circle">
+            <h3 class="text-center">Miftahou Mcolo</h3>
+        </div>
+        <div class="col-12 col-sm-12 col-md-8">
+            <h2 class="text-center">Presentation</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ad ipsum eveniet in repellat doloremque eaque accusantium, nisi voluptates obcaecati molestias delectus cumque maiores voluptatibus voluptatem impedit culpa totam dolorum modi dolor, architecto alias? Fuga aliquid nostrum, ut vel dolores repellat enim nisi omnis cupiditate dolore officiis perferendis tenetur necessitatibus numquam nam. Ut necessitatibus quia voluptate earum enim assumenda delectus unde atque veniam numquam aspernatur possimus inventore natus sapiente a vitae, aliquam minus nihil modi itaque placeat magni praesentium. Doloremque voluptatibus illum molestias nostrum illo in quos reiciendis hic, porro beatae expedita eligendi suscipit tempore explicabo nisi omnis mollitia laudantium.</p>
+        </div>
+    </div>
+</div>
+<div class="">
+    <h2 class="text-center">Expérience profetionnel</h2>
+    <div class="row text-center">        
+        <app-expe *ngFor="let exper of experiences" 
+        [title]="exper.title"
+        [date]="exper.date"
+        [lieu]="exper.lieu"
+        [soce]="exper.soce" class="col-6 col-sm-6 col-md-3"></app-expe>
+        <div class="col-6 col-sm-6 col-md-3 text-center">
+            <img src="https://via.placeholder.com/100" alt="logo" class="rounded-circle">
+            <p><span class="text-primary">show</span><br/><span style="font-size: 18px;">click her</span></p>
+            <p>Now</p>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <h2>Formation</h2>
+    <div class="row text-center">
+        <app-formation 
+            *ngFor="let forma of formations"
+            [titre]="forma.titre"
+            [option]="forma.option"
+            [lieu]="forma.lieu"
+            [date]="forma.date" class="col-sm-12 col-md-4"></app-formation>
+    </div>
+</div>
